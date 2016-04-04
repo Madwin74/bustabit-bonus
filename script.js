@@ -29,24 +29,24 @@ var stopOnMajorLoss = false;
 //Completely stop the script if you have lost more than 50% of your balance
 
 /** Bonus hunting settings **/
-var maxMultiplier = 1.57;
+var maxMultiplier = 3;
 //Should it not snipe a bonus, what would you like to cash out on.
-var maxPeopleLeft = 15;
+var maxPeopleLeft = 1;
 //How many people should be left before we force cash out. Either this or the maxMultiplier will be triggered if the bonus snipe is not triggered
 var ignoreBets = 0; // This is a advance setting
 //How many bets should we ignore to ignore all those people using scripts or betting small? We want smart bets only. 3 is a good number
 var startCheckingForBonusAtMultiplier = 1.20;
 //At which multiplier (current payout) should we start looking for a bonus
-var highBet = 4000;
+var highBet = 10000;
 //What makes a bet a "high" bet. This is the number that separates low bets from high bets. This number is divided by two on ever loss.
 //The higher this number is, the more likely it is too lose a game. The lower, the less likely. However this effects your overall outcome in the future
 
 /** Loss streak settings **/
 var lossStreakSettingsEnabled = true;
 //Disables or enabled loss streak settings
-var maxLossStreak = 3;
+var maxLossStreak = 6;
 //How many times would you like to lose in a row before resetting back to base bet. 1 to never double bet
-var lossBetMultiplier = 4;
+var lossBetMultiplier = 1.1;
 //What would you like to multiply your base bet by every time you lose, change to one to just double each game
 var holdUntilWin = true;
 //If this is true, then your current bet will not be reset. This means it will bet maxLossStreak * lossBetMultiplier * baseBet until it wins
